@@ -2,7 +2,7 @@ const mushrooms = [
   {
     id: 'mushroom1',
     name: 'Velvet Foot',
-    description: '',
+    description: 'A Deadly Mushroom. All of your picked mushrooms die if you pick this mushroom.',
     imgUrl: 'https://images.unsplash.com/photo-1572734316317-d1fe61a26162?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -11,7 +11,7 @@ const mushrooms = [
   {
     id: 'mushroom2',
     name: 'Old Man of the Woods',
-    description: '',
+    description: 'A Poisonous Mushroom. Two of your picked mushrooms die if you if you pick this mushroom.',
     imgUrl: 'https://images.unsplash.com/photo-1541935981-e6f5d54e7430?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     isMagic: false,
     isPoisonous: true,
@@ -20,7 +20,7 @@ const mushrooms = [
   {
     id: 'mushroom3',
     name: 'Candy Cap',
-    description: '',
+    description: 'A Poisonous Mushroom. Two of your picked mushrooms die if you if you pick this mushroom.',
     imgUrl: 'https://images.unsplash.com/photo-1555726698-e17c0c3d0099?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1825&q=80',
     isMagic: false,
     isPoisonous: true,
@@ -29,7 +29,7 @@ const mushrooms = [
   {
     id: 'mushroom4',
     name: 'Sweetbread Mushroom',
-    description: '',
+    description: 'A Poisonous Mushroom. Two of your picked mushrooms die if you if you pick this mushroom.',
     imgUrl: 'https://images.unsplash.com/photo-1586751599178-beb196bb33cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: true,
@@ -38,7 +38,7 @@ const mushrooms = [
   {
     id: 'mushroom5',
     name: 'Fairy-Ring Mushroom',
-    description: '',
+    description: 'A Magic Mushroom. You get one of every mushroom and win the game if you pick this mushroom',
     imgUrl: 'https://images.unsplash.com/photo-1570781848329-b475c561e8b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: true,
     isPoisonous: false,
@@ -47,7 +47,7 @@ const mushrooms = [
   {
     id: 'mushroom6',
     name: 'Shaggy Mane',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1571396687938-b3b80dfe6bb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -56,7 +56,7 @@ const mushrooms = [
   {
     id: 'mushroom7',
     name: 'Inky Cap',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1571396643106-ba46de3fac14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -65,7 +65,7 @@ const mushrooms = [
   {
     id: 'mushroom8',
     name: 'Chicken of the Woods',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1578146270428-c168d3410a2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -74,7 +74,7 @@ const mushrooms = [
   {
     id: 'mushroom9',
     name: 'Shaggy Ink Cap',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1567346325130-4c4167641eb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -83,7 +83,7 @@ const mushrooms = [
   {
     id: 'mushroom10',
     name: 'Translucent Umbrella',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1572101983250-900857259b43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1407&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -92,7 +92,7 @@ const mushrooms = [
   {
     id: 'mushroom11',
     name: 'Giraffe Mushroom',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1577970841354-fd6cb17a4de9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -101,7 +101,7 @@ const mushrooms = [
   {
     id: 'mushroom12',
     name: 'Horn of Plenty',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1574792687619-29518179c9f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -110,8 +110,17 @@ const mushrooms = [
   {
     id: 'mushroom13',
     name: 'Orange Pore',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1583723708278-6fb1bd59d89b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2389&q=80',
+    isMagic: false,
+    isPoisonous: false,
+    isDeadly: false,
+  },
+  {
+    id: 'mushroom14',
+    name: 'Fuzzy Munchkin',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
+    imgUrl: 'https://images.unsplash.com/photo-1558241048-9cd68a14f4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     isMagic: false,
     isPoisonous: false,
     isDeadly: false,
@@ -119,7 +128,7 @@ const mushrooms = [
   {
     id: 'mushroom15',
     name: 'Yellow Chanterelle',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1543269068-924a64037726?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -128,7 +137,7 @@ const mushrooms = [
   {
     id: 'mushroom16',
     name: 'Toadstool',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1545433539-aa8270f71a54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -137,7 +146,7 @@ const mushrooms = [
   {
     id: 'mushroom17',
     name: 'Mini Moss-room',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1583698156872-04e0db227349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -146,7 +155,7 @@ const mushrooms = [
   {
     id: 'mushroom18',
     name: 'Orange Peel',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1564676239488-6d2594846763?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -155,7 +164,7 @@ const mushrooms = [
   {
     id: 'mushroom19',
     name: 'Pleated Skirt',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1571154019947-3464b78daf91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2098&q=80',
     isMagic: false,
     isPoisonous: false,
@@ -164,7 +173,7 @@ const mushrooms = [
   {
     id: 'mushroom20',
     name: 'Hive Mind',
-    description: '',
+    description: 'A Normal Mushroom. One step closer, keeping picking!',
     imgUrl: 'https://images.unsplash.com/photo-1567334314101-26f2e7658aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     isMagic: false,
     isPoisonous: false,
