@@ -18,7 +18,8 @@ class Forest extends React.Component {
     ));
 
     return (
-      <div className="d-flex flex-wrap">
+      <div className="d-flex flex-wrap col-9">
+        <h3 className="col-12 text-center">The Forest</h3>
         {makeMushrooms}
       </div>
     );
