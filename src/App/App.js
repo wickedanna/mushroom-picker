@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 
+import Basket from '../components/Basket/Basket';
 import Forest from '../components/Forest/Forest';
 
 import mushroomData from '../helpers/data/mushroomData';
@@ -8,18 +9,22 @@ import mushroomData from '../helpers/data/mushroomData';
 class App extends React.Component {
   state = {
     mushrooms: [],
+    basket: [],
   }
 
   componentDidMount() {
     const mushrooms = mushroomData.getMushrooms();
     this.setState({ mushrooms });
+    const basket = mushroomData.getBasket();
+    this.setState({ basket });
   }
 
   render() {
     return (
-      <div className="App">
-      <h2>Mushroom Picker</h2>
-      <Forest mushrooms={this.state.mushrooms}/>
+      <div className="App d-flex flex-wrap row">
+      <h2 className="text-center col-12">Mushroom Picker</h2>
+      <Forest mushrooms={this.state.mushrooms} />
+      <Basket mushroom={this.state.basket} />
     </div>
     );
   }
