@@ -19,13 +19,21 @@ class App extends React.Component {
     this.setState({ basket });
   }
 
+  pickAMushroomEvent = (e) => {
+    e.preventDefault();
+    mushroomData.pickAMushroom();
+  }
+
   render() {
     return (
       <div className="App d-flex flex-wrap row">
-      <h2 className="text-center col-12">Mushroom Picker</h2>
-      <Forest mushrooms={this.state.mushrooms} />
-      <Basket mushroom={this.state.basket} />
-    </div>
+         <header className="col-12">
+           <h2 className="text-center col-12">Mushroom Picker</h2>
+           <button className="btn btn-large btn-dark" onClick={this.pickAMushroomEvent}>Pick a Mushroom</button>
+         </header>
+        <Forest mushrooms={this.state.mushrooms} />
+        <Basket mushroom={this.state.basket} />
+      </div>
     );
   }
 }
