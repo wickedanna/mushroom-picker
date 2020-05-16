@@ -1,11 +1,19 @@
 import React from 'react';
-import './Forest.scss';
+import PropTypes from 'prop-types';
 
+import mushroomShape from '../../helpers/propz/mushroomShape';
 import Mushrooms from '../Mushrooms/Mushrooms';
 
+import './Forest.scss';
+
 class Forest extends React.Component {
+  static propTypes = {
+    mushrooms: PropTypes.arrayOf(mushroomShape.mushroomShape),
+  }
+
   render() {
-    const makeMushrooms = this.props.mushrooms.map((mushroom) => (
+    const { mushrooms } = this.props;
+    const makeMushrooms = mushrooms.map((mushroom) => (
       <Mushrooms key={mushroom.id} mushroom={mushroom}/>
     ));
 
