@@ -199,12 +199,24 @@ const pickedDeadly = () => {
   basket = [];
 };
 
+const pickedMagic = () => {
+  mushrooms.forEach((mushroom) => {
+    if (mushroom.isDeadly === false && mushroom.isPoisonous === false) {
+      basket.push(mushroom);
+    }
+  });
+  // eslint-disable-next-line no-alert
+  alert('You win!');
+};
+
 const pickAMushroom = () => {
   const pickedMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
   if (pickedMushroom.isPoisonous) {
     pickedPoisonous();
   } else if (pickedMushroom.isDeadly) {
     pickedDeadly();
+  } else if (pickedMushroom.isMagic) {
+    pickedMagic();
   } else {
     basket.push(pickedMushroom);
   }
