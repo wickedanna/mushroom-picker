@@ -181,7 +181,7 @@ const mushrooms = [
   },
 ];
 
-const basket = [];
+let basket = [];
 
 const getMushrooms = () => mushrooms;
 
@@ -195,10 +195,16 @@ const pickedPoisonous = () => {
   }
 };
 
+const pickedDeadly = () => {
+  basket = [];
+};
+
 const pickAMushroom = () => {
   const pickedMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
   if (pickedMushroom.isPoisonous) {
     pickedPoisonous();
+  } else if (pickedMushroom.isDeadly) {
+    pickedDeadly();
   } else {
     basket.push(pickedMushroom);
   }
