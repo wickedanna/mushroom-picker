@@ -187,6 +187,19 @@ const getMushrooms = () => mushrooms;
 
 const getBasket = () => basket;
 
+const youWin = () => {
+  const gatherAll = mushrooms.filter((mushroom) => mushroom.isPoisonous === false && mushroom.isDeadly === false && mushroom.isMagic === false);
+  const checkMushroomLog = gatherAll.map((mushroom) => {
+    const isIncluded = basket.includes((mushroom));
+    return isIncluded;
+  });
+  const isAWinner = checkMushroomLog.every((x) => x === true);
+  if (isAWinner) {
+    // eslint-disable-next-line no-alert
+    alert('You gathered all the mushrooms!');
+  }
+};
+
 const pickedPoisonous = () => {
   if (basket.length < 2) {
     basket.splice(0, 1);
@@ -206,8 +219,9 @@ const pickedMagic = () => {
     }
   });
   // eslint-disable-next-line no-alert
-  alert('You win!');
+  youWin();
 };
+
 
 const pickAMushroom = () => {
   const pickedMushroom = mushrooms[Math.floor(Math.random() * mushrooms.length)];
@@ -219,6 +233,7 @@ const pickAMushroom = () => {
     pickedMagic();
   } else {
     basket.push(pickedMushroom);
+    youWin();
   }
 };
 
