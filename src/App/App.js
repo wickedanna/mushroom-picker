@@ -1,15 +1,18 @@
 import React from 'react';
-import './App.scss';
 
 import Basket from '../components/Basket/Basket';
 import Forest from '../components/Forest/Forest';
 
 import mushroomData from '../helpers/data/mushroomData';
+import WonTheGame from '../components/WonTheGame/WonTheGame';
+
+import './App.scss';
 
 class App extends React.Component {
   state = {
     mushrooms: [],
     basket: [],
+    status: '',
   }
 
   componentDidMount() {
@@ -21,27 +24,49 @@ class App extends React.Component {
 
   pickAMushroomEvent = (e) => {
     e.preventDefault();
-    mushroomData.pickAMushroom();
+    const status = mushroomData.pickAMushroom();
     const basket = mushroomData.getBasket();
-    this.setState({ basket });
+    this.setState({ basket, status });
+  }
+
+  playAgain = () => {
+    const status = '';
+    const basket = [];
+    this.setState({ basket, status });
   }
 
   render() {
-    const { basket, mushrooms } = this.state;
+    const { basket, mushrooms, status } = this.state;
+    const checkStatus = () => {
+      if (status === 'win') {
+        return (
+      <WonTheGame playAgain={this.playAgain}/>
+        );
+      }
+      if (status === 'die') {
+        return 'you have died!';
+      }
+      return (
+        <div>
+           <header className="text-center mushroom-picker-header">
+             <h1>Mushroom Picker</h1>
+            <button className="btn btn-large btn-dark" onClick={this.pickAMushroomEvent}>Pick a Mushroom</button>
+           </header>
+          <div className="row justify-content-around">
+          <div className="col-5 m-1 Forest">
+             <Forest mushrooms={ mushrooms } />
+           </div>
+          <div className="col-5 m-1 Basket">
+             <Basket mushrooms={ basket } />
+           </div>
+        </div>
+      </div>
+      );
+    };
+
     return (
       <div className="App">
-         <header className="text-center">
-           <h2>Mushroom Picker</h2>
-           <button className="btn btn-large btn-dark" onClick={this.pickAMushroomEvent}>Pick a Mushroom</button>
-         </header>
-         <div className="row">
-           <div className="col-6">
-           <Forest mushrooms={ mushrooms } />
-           </div>
-           <div className="col-6">
-           <Basket mushrooms={ basket } />
-           </div>
-         </div>
+         {checkStatus()}
       </div>
     );
   }

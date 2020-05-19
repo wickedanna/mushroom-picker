@@ -14,7 +14,7 @@ class Mushrooms extends React.Component {
 
     return (
       <div className="Mushroom col-4 my-2">
-        <div className="card">
+        <div className="card mushroom-card">
           <img className="card-img-top" src={mushroom.imgUrl} alt=""/>
           <div className="card-body">
             <h5 className="card-title">{mushroom.name}</h5>
