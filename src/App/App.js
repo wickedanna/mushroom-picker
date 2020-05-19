@@ -4,6 +4,7 @@ import Basket from '../components/Basket/Basket';
 import Forest from '../components/Forest/Forest';
 
 import mushroomData from '../helpers/data/mushroomData';
+import LostTheGame from '../components/LostTheGame/LostTheGame';
 import WonTheGame from '../components/WonTheGame/WonTheGame';
 
 import './App.scss';
@@ -44,7 +45,9 @@ class App extends React.Component {
         );
       }
       if (status === 'die') {
-        return 'you have died!';
+        return (
+          <LostTheGame playAgain={this.playAgain}/>
+        );
       }
       return (
         <div>

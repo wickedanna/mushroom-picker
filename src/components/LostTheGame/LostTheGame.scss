@@ -1,9 +1,10 @@
 @import '../../styles/variables';
 
-.WonTheGame {
+.LostTheGame {
   margin: 0;
   padding: 1em;
   height: 900px;
-  background-color: $winner;
+  background-color: $loser;
+  color: white;
   text-align: center;
 }
